@@ -16,6 +16,10 @@ return require('packer').startup(function()
     use 'folke/tokyonight.nvim'
     use 'mattn/efm-langserver'
     use {
+        'nvim-lualine/lualine.nvim',
+        requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+    }
+    use {
         'nvim-telescope/telescope.nvim', tag = '0.1.x',
        requires = { {'nvim-lua/plenary.nvim'} }
     }
@@ -25,5 +29,4 @@ return require('packer').startup(function()
     }
     use 'tpope/vim-fugitive'
     use 'tpope/vim-surround'
-    use 'vim-airline/vim-airline'
 end)

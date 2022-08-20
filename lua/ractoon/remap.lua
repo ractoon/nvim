@@ -1,4 +1,4 @@
-local nnoremap = require("theprimeagen.keymap").nnoremap
+local nnoremap = require("ractoon.keymap").nnoremap
 
 nnoremap("<leader>pv", "<cmd>Ex<CR>")
 nnoremap("<leader>ff", "<cmd>lua require('telescope.builtin').find_files()<cr>")
