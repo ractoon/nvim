@@ -11,7 +11,7 @@ end
 return require('packer').startup(function()
     use {
         'wbthomason/packer.nvim',
-      opt = false
+        opt = false
     }
     use 'folke/tokyonight.nvim'
     use 'mattn/efm-langserver'
@@ -21,7 +21,7 @@ return require('packer').startup(function()
     }
     use {
         'nvim-telescope/telescope.nvim', tag = '0.1.x',
-       requires = { {'nvim-lua/plenary.nvim'} }
+        requires = { {'nvim-lua/plenary.nvim'} }
     }
     use {
         'nvim-treesitter/nvim-treesitter',

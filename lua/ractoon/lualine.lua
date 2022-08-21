@@ -23,6 +23,7 @@ require('lualine').setup {
     lualine_c = {
         {
             'filename',
+            path = 3,
             show_filename_only = true,
             show_modified_status = true,
             filetype_names = {
@@ -43,7 +44,7 @@ require('lualine').setup {
             },
         }
     },
-    lualine_x = {'encoding', 'fileformat', 'filetype'},
+    lualine_x = {'filetype'},
     lualine_y = {'progress'},
     lualine_z = {'location'}
   },
