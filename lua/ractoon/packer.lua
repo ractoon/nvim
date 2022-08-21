@@ -14,7 +14,18 @@ return require('packer').startup(function()
         opt = false
     }
     use 'folke/tokyonight.nvim'
+    use { 'hrsh7th/nvim-cmp',
+        requires = {
+            { 'hrsh7th/cmp-nvim-lsp' },
+            { 'hrsh7th/cmp-buffer' },
+            { 'hrsh7th/cmp-path' },
+            { 'hrsh7th/cmp-cmdline' },
+            { 'hrsh7th/cmp-vsnip' },
+            { 'hrsh7th/vim-vsnip' },
+        },
+    }
     use 'mattn/efm-langserver'
+    use 'neovim/nvim-lspconfig'
     use {
         'nvim-lualine/lualine.nvim',
         requires = { 'kyazdani42/nvim-web-devicons', opt = true }
