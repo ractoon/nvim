@@ -13,6 +13,7 @@ return require('packer').startup(function()
         'wbthomason/packer.nvim',
         opt = false
     }
+    use 'adoy/vim-php-refactoring-toolbox'
     use 'folke/tokyonight.nvim'
     use { 'hrsh7th/nvim-cmp',
         requires = {
@@ -24,8 +25,17 @@ return require('packer').startup(function()
             { 'hrsh7th/vim-vsnip' },
         },
     }
+    use 'jwalton512/vim-blade'
     use 'mattn/efm-langserver'
     use 'neovim/nvim-lspconfig'
+    use {
+        'noahfrederick/vim-laravel',
+        requires = {
+            { 'noahfrederick/vim-composer' },
+            { 'tpope/vim-projectionist' },
+            { 'tpope/vim-dispatch' },
+        }
+    }
     use {
         'nvim-lualine/lualine.nvim',
         requires = { 'kyazdani42/nvim-web-devicons', opt = true }
@@ -39,6 +49,10 @@ return require('packer').startup(function()
         run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
     }
 --  use 'preservim/nerdtree'
+    use 'preservim/tagbar'
+    use 'StanAngeloff/php.vim'
+    use 'stephpy/vim-php-cs-fixer'
+    use 'tpope/vim-commentary'
     use 'tpope/vim-fugitive'
     use 'tpope/vim-surround'
 end)

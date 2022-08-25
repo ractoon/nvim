@@ -10,6 +10,14 @@ An evolving config for neovim. Originally based off ThePrimeagen's YouTube tutor
 4. ???
 5. Profit
 
+### Language Servers
+
+- eslint, html - `npm i -g vscode-langservers-extracted`
+- [Phan](https://github.com/phan/phan#getting-started)
+- [phpactor](https://phpactor.readthedocs.io/en/master/usage/standalone.html#global-installation)
+- tailwindcss - `npm install -g @tailwindcss/language-server`
+- volar - `npm install -g @volar/vue-language-server`
+
 ### Icon fonts
 
 For display of icons in lualine use [nerd fonts](https://github.com/ryanoasis/nerd-fonts#font-installation).
