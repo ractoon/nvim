@@ -48,6 +48,7 @@ return require('packer').startup(function()
         'nvim-treesitter/nvim-treesitter',
         run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
     }
+    use 'nvim-treesitter/nvim-treesitter-context'
 --  use 'preservim/nerdtree'
     use 'preservim/tagbar'
     use 'StanAngeloff/php.vim'
