@@ -18,6 +18,13 @@ An evolving config for neovim. Originally based off ThePrimeagen's YouTube tutor
 - tailwindcss - `npm install -g @tailwindcss/language-server`
 - volar - `npm install -g @volar/vue-language-server`
 
+### Linters
+
+- [PHPMD](https://github.com/phpmd/phpmd) - `composer global require phpmd/phpmd`
+- [PHPCS](https://github.com/squizlabs/PHP_CodeSniffer) - `composer global require squizlabs/php_codesniffer`
+- [phpstan](https://github.com/phpstan/phpstan) - `composer global require phpstan/phpstan`
+- [php-cs-fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer) - `composer global require friendsofphp/php-cs-fixer`
+
 ### Icon fonts
 
 For display of icons in lualine use [nerd fonts](https://github.com/ryanoasis/nerd-fonts#font-installation).

@@ -14,6 +14,9 @@ return require('packer').startup(function()
         opt = false
     }
     use 'adoy/vim-php-refactoring-toolbox'
+    use 'alvan/vim-php-manual'
+    use 'arnaud-lb/vim-php-namespace'
+    use 'dense-analysis/ale'
     use 'folke/tokyonight.nvim'
     use { 'hrsh7th/nvim-cmp',
         requires = {
