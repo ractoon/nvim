@@ -15,6 +15,19 @@ return require('packer').startup(function()
     }
     use 'adoy/vim-php-refactoring-toolbox'
     use 'alvan/vim-php-manual'
+    use {
+        "ahmedkhalf/project.nvim",
+        config = function()
+            require("project_nvim").setup {
+                -- Manual mode doesn't automatically change your root directory, so you have
+                -- the option to manually do so using `:ProjectRoot` command.
+                manual_mode = false,
+
+                -- When set to false, you will get a message when project.nvim changes your directory.
+                silent_chdir = true,
+            }
+        end
+    }
     use 'arnaud-lb/vim-php-namespace'
     use 'dense-analysis/ale'
     use 'folke/tokyonight.nvim'

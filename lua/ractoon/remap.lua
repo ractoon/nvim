@@ -11,6 +11,10 @@ nnoremap("<leader>fg", "<cmd>lua require('telescope.builtin').live_grep()<cr>")
 nnoremap("<leader>fb", "<cmd>lua require('telescope.builtin').buffers()<cr>")
 nnoremap("<leader>fs", "<cmd>lua require('telescope.builtin').lsp_document_symbols()<cr>")
 nnoremap("<leader>fh", "<cmd>lua require('telescope.builtin').help_tags()<cr>")
+
+require('telescope').load_extension('projects')
+nnoremap("<leader>fp", "<cmd>:Telescope projects<cr>")
+
 nnoremap("<D-j>", "<cmd>:terminal<cr>")
 
 -- PHP CS Fixer
