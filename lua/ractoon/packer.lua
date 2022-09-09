@@ -16,9 +16,9 @@ return require('packer').startup(function()
     use 'adoy/vim-php-refactoring-toolbox'
     use 'alvan/vim-php-manual'
     use {
-        "ahmedkhalf/project.nvim",
+        'ahmedkhalf/project.nvim',
         config = function()
-            require("project_nvim").setup {
+            require('project_nvim').setup {
                 -- Manual mode doesn't automatically change your root directory, so you have
                 -- the option to manually do so using `:ProjectRoot` command.
                 manual_mode = false,
@@ -40,6 +40,14 @@ return require('packer').startup(function()
             { 'hrsh7th/cmp-vsnip' },
             { 'hrsh7th/vim-vsnip' },
         },
+    }
+    use {
+        'jinh0/eyeliner.nvim',
+        config = function()
+            require('eyeliner').setup {
+                highlight_on_key = true
+            }
+        end
     }
     use 'jwalton512/vim-blade'
     use 'mattn/efm-langserver'
@@ -65,7 +73,7 @@ return require('packer').startup(function()
         run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
     }
     use 'nvim-treesitter/nvim-treesitter-context'
---  use 'preservim/nerdtree'
+    --  use 'preservim/nerdtree'
     use 'preservim/tagbar'
     use 'StanAngeloff/php.vim'
     use 'stephpy/vim-php-cs-fixer'
